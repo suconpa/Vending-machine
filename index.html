@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>밴딩머신</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-logo">
+        <img src="./img/top-log.png" alt="" />
+      </div>
+      <main>
+        <div class="main-content-container">
+          <section class="product-container">
+            <div class="product-wrap">
+              <button class="product-list item01">
+                <img src="./img/Original_Cola.png" alt="" />
+                <h2 class="product-list-title">Original_Cola</h2>
+                <span>1000원</span>
+              </button>
+              <button class="product-list item02">
+                <img src="./img/Yellow_Cola.png" alt="" />
+                <h2 class="product-list-title">Yellow_Cola</h2>
+                <span>1000원</span>
+              </button>
+              <button class="product-list item03">
+                <img src="./img/Cool_Cola.png" alt="" />
+                <h2 class="product-list-title">Cool_Cola</h2>
+                <span>1000원</span>
+              </button>
+              <button class="product-list item04">
+                <img src="./img/green_Cola.png" alt="" />
+                <h2 class="product-list-title">green_Cola</h2>
+                <span>1000원</span>
+              </button>
+              <button class="product-list item05">
+                <img src="./img/Orange_Cola.png" alt="" />
+                <h2 class="product-list-title">Orange_Cola</h2>
+                <span>1000원</span>
+              </button>
+              <button class="product-list item06">
+                <img src="./img/Violet_Cola.png" alt="" />
+                <h2 class="product-list-title">Violet_Cola</h2>
+                <span>1000원</span>
+              </button>
+            </div>
+
+            <div class="content-price">
+              <form id="user-input">
+                <div id="return">
+                  <span>잔액</span>
+                  <span>1000원</span>
+                </div>
+                <button type="submit" id="return-btn">거스름돈 반환</button>
+                <input type="text" id="deposit" placeholder="입금액 입력" />
+                <button type="submit" id="deposit-btn">입금</button>
+              </form>
+            </div>
+
+            <div class="content-list-wrap">
+              <ul class="content-list">
+                <li>
+                  <h3>Original_Cola</h3>
+                  <span>1</span>
+                </li>
+                <li>
+                  <h3>green_Cola</h3>
+                  <span>1</span>
+                </li>
+              </ul>
+              <button type="submit" id="get-btn">획득</button>
+            </div>
+          </section>
+
+          <!-- 2덩 -->
+          <section class="wallet-wrap">
+            <div class="wrap">
+              <span>소지금:</span>
+              <span>25000원</span>
+            </div>
+          </section>
+
+          <!-- 3덩 -->
+          <section class="basket-wrap">
+            <div class="basket-container">
+              <h3 class="basket-title">획득한 음료</h3>
+              <ul class="content-list">
+                <li>
+                  <h3>Original_Cola</h3>
+                  <span>1</span>
+                </li>
+                <li>
+                  <h3>green_Cola</h3>
+                  <span>1</span>
+                </li>
+              </ul>
+              <p id="total-value">총금액 : 9000 원</p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

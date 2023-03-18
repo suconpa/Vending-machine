@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body,
+button,
+input[placeholder] {
+  font-family: "Noto Sans KR", sans-serif;
+}
+button {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input[placeholder] {
+  color: #bdbdbd;
+}
+
+/* 자판기 리스트 */
+.content-list > li {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  background-color: #fff;
+  margin: 0 10px 5px;
+  padding: 5px;
+  align-items: center;
+  border-radius: var(--main-border-radius);
+}
+
+.content-list > li::before {
+  content: " ";
+  display: inline-block;
+  background: url(./img/Original_Cola.png) no-repeat 0 0 / contain;
+  padding: 20px 10px;
+}
+
+.content-list > li > h3 {
+  font-size: 9px;
+  font-weight: var(--font-size500);
+}
+
+.content-list {
+  border-radius: var(--main-border-radius);
+  border: var(--main-border);
+  background-color: var(--main-color);
+  padding-top: 10px;
+  flex-grow: 1;
+}
+/* 자판기 숫자 */
+
+.content-list span {
+  display: inline-block;
+  border: var(--main-border);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: var(--main-border-radius);
+  margin-left: auto;
+}
